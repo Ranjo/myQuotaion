@@ -1,0 +1,19 @@
+	.cent{
+		width: 30%;
+		padding-top: 200px; 
+	}
+	.btnn{
+		width: 50%;
+		float: left;
+
+	}
+fieldset{
+    border-radius: 5px;
+}
+#logintxt{
+	font-size: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5px;
+    
+}
