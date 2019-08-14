@@ -1,3 +1,4 @@
+/*
 	.cent{
 		width: 30%;
 		padding-top: 200px; 
@@ -17,3 +18,26 @@ fieldset{
     padding: 5px;
     
 }
+*/
+button{
+	float: auto;
+	margin-bottom: 10px;
+	width:25%;
+	
+}
+button
+input{
+	z-index: 200;
+	border: none;
+	height: inherit;
+	width: inherit;
+}
+.input-field{
+	z-index: 2;
+	background: yellow;
+	border: solid 1px;
+	width: 210px;
+	margin-bottom: 10px;
+	border-radius: 5px
+}
+

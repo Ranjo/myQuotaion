@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/inv.css">
 <body>
 	<div>
-		<div class="container cent">
+		<!--<div class="container cent">
 		<fieldset class="w3-padding w3-pannel">
             <div id="logintxt">Login</div>
 				<form method="POST" action="config/logincon.php">
@@ -25,7 +25,22 @@
 
 				</form>
 			</fieldset>
+		</div>-->
+		<div>
+		<form>
+			<div class="input-field">
+				<input>
+			</div>
+			<div class="input-field">
+				<input>
+			</div>
+			<div>
+			<button>Login</button><br>
+			<button> Forgot Password</button>
+			</div>
+		</form>
 		</div>
+		
 	</div>
 	<script type="javascript" src="Js/style.js">
 	
