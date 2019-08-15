@@ -19,25 +19,71 @@ fieldset{
     
 }
 */
+body{
+	background-image: url(../images/Loginbkg.jpg);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-attachment: fixed;
+	height: 100%;
+}
 button{
 	float: auto;
-	margin-bottom: 10px;
-	width:25%;
+	margin:10px 0 10px;
+	width:100%;
+	height: 45px;
+	border-radius: 5px;
 	
 }
-button
+
 input{
-	z-index: 200;
-	border: none;
-	height: inherit;
-	width: inherit;
+	
+	height: 50px;
+	
+	width: 100%;
+}
+#loginbtn{
+	background-color: #73c2fb;
+}
+
+#form-div{
+	background-attachment: fixed;
+margin: 400px auto;
+border: solid 1px;
+width: 300px;
 }
 .input-field{
-	z-index: 2;
-	background: yellow;
-	border: solid 1px;
-	width: 210px;
-	margin-bottom: 10px;
-	border-radius: 5px
+	bottom: 50px;
+	border: solid 2px solid;
+	left: 10px;
+	width: 100%;
+	height: 50px;
+	margin: 10px 0 10px 0;
+	border-radius: 5px;
+	padding: 5px;
 }
+/*i{
+	position: relative;
+	top: 39px;
+
+}
+input[type="text"]{
+	z-index: 0.
+	border: none;
+	position: relative;
+	left: 30px;
+	
+}*/
+/*.icon-element{
+	position: relative;
+	top: px;
+	background-color: darkgray;
+	width: 30px;
+}*/
+/*input[type="password"]{
+	border: none;
+	position: relative;
+	left: 30px
+}*/
+}
+
 

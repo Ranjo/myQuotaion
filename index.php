@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/inv.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 	<div>
 		<!--<div class="container cent">
@@ -26,17 +27,23 @@
 				</form>
 			</fieldset>
 		</div>-->
-		<div>
-		<form>
+		<div id="form-div">
+		<form method="post" action="config/logincon.php">
 			<div class="input-field">
-				<input>
+				<!--<div class="icon-element">
+				<i class="fa fa-user-circle-o fa-2x"></i>
+				</div>-->
+				<input type="text" name="usrname" required placeholder="Enter your username"  id="usrname">
 			</div>
 			<div class="input-field">
-				<input>
+				<!--<div class="icon-element">
+				<i class="fa fa-key fa-2x"></i>
+				</div>-->
+				<input type="password" placeholder="Enter Password" name="pwds" id="passwd">
 			</div>
 			<div>
-			<button>Login</button><br>
-			<button> Forgot Password</button>
+			<button class="" id="loginbtn">Login</button><br>
+			<button class="w3-red" id="fgtbtn"> Forgot Password</button>
 			</div>
 		</form>
 		</div>
