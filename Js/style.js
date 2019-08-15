@@ -1,3 +1,3 @@
-const username = document.querySelector('name="username"');
-const password = document.querySelector('name="password"');
-const loginBtn = document.querySelector('name="sub"');
+/*const username = document.querySelector('#usrname');
+username.focus();*/
+var username = document.getElementById('username').autoFocus;

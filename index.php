@@ -27,13 +27,14 @@
 				</form>
 			</fieldset>
 		</div>-->
+		<div id="back-div">
 		<div id="form-div">
 		<form method="post" action="config/logincon.php">
 			<div class="input-field">
 				<!--<div class="icon-element">
 				<i class="fa fa-user-circle-o fa-2x"></i>
 				</div>-->
-				<input type="text" name="usrname" required placeholder="Enter your username"  id="usrname">
+				<input type="text" name="usrname" required placeholder="Enter your username"  id="usrname" autofocus>
 			</div>
 			<div class="input-field">
 				<!--<div class="icon-element">
@@ -48,6 +49,7 @@
 		</form>
 		</div>
 		
+	</div>
 	</div>
 	<script type="javascript" src="Js/style.js">
 	

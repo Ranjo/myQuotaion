@@ -22,7 +22,7 @@ fieldset{
 body{
 	background-image: url(../images/Loginbkg.jpg);
 	background-repeat: no-repeat;
-	background-size:contain;
+	background-size:cover;
 	background-attachment: fixed;
 	height: 100%;
 }
@@ -44,13 +44,19 @@ input{
 #loginbtn{
 	background-color: #73c2fb;
 }
-
+#back-div{
+background-color: azure;
+margin: 0px auto;
+width: 310px;
+	height: 101%;
+}
 #form-div{
-	background-attachment: fixed;
-margin: 400px auto;
+background-color: aliceblue;
+margin: 0px auto;
 border: solid 1px;
 width: 300px;
 }
+
 .input-field{
 	bottom: 50px;
 	border: solid 2px solid;
