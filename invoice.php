@@ -5,6 +5,8 @@
 </head>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <?php 
+	//include('config/session.php');
+	session_start();
 $quantity =$_POST['qty'];
 $amount =$_POST['amt'];
 $total = $quantity*$amount
@@ -67,7 +69,7 @@ $total = $quantity*$amount
 <form>
 <div class="rows">
 <div class="col-xs-6">
-Served by:</div><div class="col-xs-6"> Tony</div>
+Served by:</div><div class="col-xs-6"> <?php echo $_SESSION['login_user']; ?></div>
 </div>
 <div class="col-xs-6">
 Date: </div>

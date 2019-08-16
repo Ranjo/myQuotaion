@@ -1,8 +1,9 @@
 <?php
 include 'dbconfig.php';
+session_start();
 
-$username = $_POST['username'];
-$pass = $_POST['pswd'];
+$username = $_POST['usrname'];
+$pass = $_POST['pwds'];
 $result = mysqli_query($con,"SELECT * FROM users WHERE username = '$username' AND password = '$pass'");
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $active = $row['active'];
