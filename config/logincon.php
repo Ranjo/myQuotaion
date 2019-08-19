@@ -8,15 +8,14 @@ $result = mysqli_query($con,"SELECT * FROM users WHERE username = '$username' AN
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $active = $row['active'];
 $count = mysqli_num_rows($result);
+
 if($count == 1){
 	$_SESSION['login_user'] = $username;
-	//echo "successfull";
-	header("location: ../invoice.php");
-	//header("location: ../index.php?msg=2");
-	
+	header("location: ../invoice.php");	
 }
 else{
    echo "Wrong Credentials"; 
+	//echo $_SESSION['login_user'];
 //header("location: ../index.php?msg=2");
 }
 /*
