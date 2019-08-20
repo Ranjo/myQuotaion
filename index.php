@@ -43,7 +43,7 @@
 				<input type="password" placeholder="Enter Password" name="pwds" id="passwd">
 			</div>
 			<div class="container reg">
-			Dont have an account? <a href="#">Register</a></div>
+			Dont have an account? <a href="Users/registerUsr.php">Register</a></div>
 			<div>
 			<button class="" id="loginbtn">Login</button><br>
 			<button class="w3-red" id="fgtbtn"> Forgot Password</button>

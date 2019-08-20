@@ -1,0 +1,17 @@
+body{
+	//background-image: url(../images/Loginbkg.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+.input-element{
+	margin: 10px;
+	//border: solid 2px;
+}
+input{
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	background-color: azure;
+}
