@@ -5,13 +5,19 @@ body{
 	background-attachment: fixed;
 	height: 100%;
 }
-.input-element{
-	margin: 10px;
-	//border: solid 2px;
+.form-body{
+	width: 500px;
+	padding: 5px;
+	margin: 0 auto;
 }
 input{
-	height: 50px;
-	width: 100%;
+	margin: 10px;
+	padding: 5px;
 	border-radius: 5px;
-	background-color: azure;
+}
+
+
+
+input[name="surname"], input[name="UserPhone"], input[name="confirmPassword"], input[name="companyPhone"]{
+	margin-left: 10px;
 }
