@@ -12,7 +12,7 @@
 <body>
 <div class="form-body">
 	<fieldset><legend><h1>Signup</h1></legend>
-		<form method="post" action="../config/logincon.php">
+		<form method="post" action="../config/logincon.php" enctype="multipart/form-data">
 		<div class="inside-form">
 			<fieldset><legend>Personal Details</legend>
 					<div class="row">
