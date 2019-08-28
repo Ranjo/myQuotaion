@@ -2,9 +2,9 @@
 include 'dbconfig.php';
 session_start();
 
-$username = $_POST['usrname'];
+$username = mysqli_real_escape_string($conn, $_POST['usrname']);
 $pass = $_POST['pwds'];
-$result = mysqli_query($con,"SELECT * FROM users WHERE username = '$username' AND password = '$pass'");
+$result = mysqli_query($conn,"SELECT * FROM users WHERE username = '$username' AND password = '$pass'");
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $active = $row['active'];
 $count = mysqli_num_rows($result);

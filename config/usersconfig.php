@@ -10,7 +10,14 @@ $companyzipcode= mysqli_real_escape_string($conn, $_POST['Companyzip']);
 $companyemail= mysqli_real_escape_string($conn, $_POST['companyEmail']);
 $companyphoneno= mysqli_real_escape_string($conn, $_POST['companyPhone']);
 $companylogo = addslashes(file_get_contents($_FILES['companyLogo']['tmp_name']));
-$password= mysqli_real_escape_string($conn, $_POST['password']);
+$password= md5(mysqli_real_escape_string($conn, $_POST['password']));
 
 
+$results= mysqli_query($conn, "INSERT INTO users(username, firstname, surname, emailadd, phoneno, companyname, companyzipcode, companyemail, companyphoneno, comapanylogo, 	password) VALUES('$username', '$firstname', '$surname', '$emailadd', '$phoneno', '$companyname', '$companyzipcode', '$companyemail', '$companyphoneno', '$companylogo', '$password')");
+if(!$results){
+    echo "try again";
+}
+else{
+    echo "success";
+}
 ?>
