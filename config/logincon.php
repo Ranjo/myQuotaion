@@ -11,10 +11,15 @@ $count = mysqli_num_rows($result);
 
 if($count == 1){
 	$_SESSION['login_user'] = $username;
-	header("location: ../invoice.php");	
+
+    header("location: ../users/profile.php");	
 }
 else{
-   echo "Wrong Credentials"; 
+    	echo " <script>
+        alert('Incorrect credentials');
+        window.location.href='../index.php'
+        </script>";
+   /*echo "Wrong Credentials"; */
 	//echo $_SESSION['login_user'];
 //header("location: ../index.php?msg=2");
 }

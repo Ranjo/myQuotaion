@@ -1,24 +1,4 @@
-/*
-	.cent{
-		width: 30%;
-		padding-top: 200px; 
-	}
-	.btnn{
-		width: 50%;
-		float: left;
 
-	}
-fieldset{
-    border-radius: 5px;
-}
-#logintxt{
-	font-size: 1.5em;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 5px;
-    
-}
-*/
 body{
 	background-image: url(../images/Loginbkg.jpg);
 	background-repeat: no-repeat;
@@ -28,7 +8,7 @@ body{
 }
 #back-div{
 	position: absolute;
-	top: 200px;
+	top: 159px;
 	left: 50%;
 	height: 600px;
 }
@@ -55,9 +35,9 @@ input{
 }
 #back-div{
 background-color: azure;
-//margin: 0px auto;
+margin: 0px auto;
 width: 310px;
-	//height: 101%;
+height: 290px;
 }
 #form-div{
 background-color: aliceblue;
@@ -86,30 +66,6 @@ width: 300px;
 	margin: 10px 0 10px 0;
 	border-radius: 5px;
 	padding: 5px;
-}
-/*i{
-	position: relative;
-	top: 39px;
-
-}
-input[type="text"]{
-	z-index: 0.
-	border: none;
-	position: relative;
-	left: 30px;
-	
-}*/
-/*.icon-element{
-	position: relative;
-	top: px;
-	background-color: darkgray;
-	width: 30px;
-}*/
-/*input[type="password"]{
-	border: none;
-	position: relative;
-	left: 30px
-}*/
 }
 
 
