@@ -15,14 +15,17 @@ $row= mysqli_fetch_array($result);
     <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['comapanylogo']).'" id="companyLogo">'?>
 </div>
 <div id="pdetails">
-<span>Welcome <?php echo $user_check; ?></span>
+    <span>Welcome <?php echo $user_check; ?></span>
 </div>
 <div class="containers">
-<div id="side">
-</div>
-<div id="main">
-    hello
-</div>
+    <div id="side">
+        <div class="litems">Items</div>
+        <div class="litems">Quotations</div>
+        <div class="litems"> Reports</div>
+    </div>
+    <div id="main">
+        hello
+    </div>
 </div>
 <div class="footer">
     Developed by Tony
