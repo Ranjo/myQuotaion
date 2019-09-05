@@ -3,3 +3,45 @@ height: 100px;
 background-color:antiquewhite;
 
 }
+#pdetails{ 
+    height:20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+#companyLogo{
+    height:100%;
+    width: 200px;
+    border: 1px solid blue;
+}
+h1{ 
+    position: relative !important;
+    float: inherit !important;
+    font-family: sans-serif !important;
+    font-style: oblique !important;
+    font-size: 12px !important;
+}
+.containers{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+#side{
+    float: left;
+    width: 350px;
+    height: 567px;
+    background-color: cadetblue;
+}
+#main{
+    background-color: azure;
+    margin-left: 350px;
+    width: 100%;
+    height: 100%;    
+}
+.footer{
+    position: static;
+    height: 30px;
+    bottom: 10px;
+    background-color: cornsilk;
+}

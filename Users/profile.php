@@ -8,14 +8,24 @@ $row= mysqli_fetch_array($result);
 <title>Welcome <?php echo $user_check; ?></title>
 </head>
     <link rel="stylesheet" type="text/css" href="../css/prof.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
+    
 <body>
 <div id="top-part">
+    <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['comapanylogo']).'" id="companyLogo">'?>
 </div>
 <div id="pdetails">
-<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['comapanylogo']).' ">'?>
-Welcome <?php echo $user_check; ?>
+<span>Welcome <?php echo $user_check; ?></span>
 </div>
+<div class="containers">
 <div id="side">
+</div>
+<div id="main">
+    hello
+</div>
+</div>
+<div class="footer">
+    Developed by Tony
 </div>
 </body>
 </html>
