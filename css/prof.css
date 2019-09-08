@@ -15,6 +15,7 @@ background-color:antiquewhite;
     width: 200px;
     border: 1px solid blue;
 }
+
 h1{ 
     position: relative !important;
     float: inherit !important;
@@ -41,11 +42,25 @@ h1{
     height: 30px;
     text-align: left;
 }
+.litems:hover{
+    border-bottom: 1px solid white;
+    color: blue;
+    background-color: teal;
+   
+}
 #main{
-    background-color: azure;
+    background-color: white;
     margin-left: 350px;
     width: 100%;
     height: 100%;    
+}
+li>a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+h5{
+ width: 500px;
+    color: blue;
 }
 .footer{
     position: static;
