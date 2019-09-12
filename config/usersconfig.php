@@ -15,9 +15,9 @@ $password= md5(mysqli_real_escape_string($conn, $_POST['password']));
 
 $results= mysqli_query($conn, "INSERT INTO users(username, firstname, surname, emailadd, phoneno, companyname, companyzipcode, companyemail, companyphoneno, comapanylogo, 	password) VALUES('$username', '$firstname', '$surname', '$emailadd', '$phoneno', '$companyname', '$companyzipcode', '$companyemail', '$companyphoneno', '$companylogo', '$password')");
 if(!$results){
-    echo "try again";
+	echo "try again";
 }
 else{
-    echo "success";
+	echo "success";
 }
 ?>

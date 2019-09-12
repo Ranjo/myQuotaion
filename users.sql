@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `username` varchar(10) NOT NULL,
   `firstname` varchar(20) NOT NULL,
   `surname` varchar(20) NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
- ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables

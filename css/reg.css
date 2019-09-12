@@ -32,13 +32,13 @@ input[type="checkbox"]{
 	top:5px;
 }
 input[type="submit"]{
-    color: white;
+	color: white;
 	background-color: green;
 	margin: 10px 0px 0px 0px;
 	width: 100%;
 }
 input[type="submit"]:hover{
-    color:black;
-    background-color: white;
+	color:black;
+	background-color: white;
 	border: solid 3px #4CAF50;
 }

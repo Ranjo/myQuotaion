@@ -14,7 +14,7 @@ if($count == 1){
 	header("location: ../invoice.php");	
 }
 else{
-   echo "Wrong Credentials"; 
+	echo "Wrong Credentials"; 
 	//echo $_SESSION['login_user'];
 //header("location: ../index.php?msg=2");
 }

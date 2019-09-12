@@ -54,16 +54,16 @@ input{
 	background-color: cornflowerblue;
 }
 #back-div{
-background-color: azure;
-//margin: 0px auto;
-width: 310px;
+	background-color: azure;
+	//margin: 0px auto;
+	width: 310px;
 	//height: 101%;
 }
 #form-div{
-background-color: aliceblue;
-margin: 0px auto;
-border: solid 1px;
-width: 300px;
+	background-color: aliceblue;
+	margin: 0px auto;
+	border: solid 1px;
+	width: 300px;
 }
 .reg{
 	
@@ -98,18 +98,18 @@ input[type="text"]{
 	position: relative;
 	left: 30px;
 	
-}*/
+	}*/
 /*.icon-element{
 	position: relative;
 	top: px;
 	background-color: darkgray;
 	width: 30px;
-}*/
+	}*/
 /*input[type="password"]{
 	border: none;
 	position: relative;
 	left: 30px
-}*/
+	}*/
 }
 
 
