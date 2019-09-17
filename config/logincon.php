@@ -4,10 +4,10 @@ session_start();
 
 $username = mysqli_real_escape_string($conn, $_POST['usrname']);
 $pass = $_POST['pwds'];
-$result = mysqli_query($conn,"SELECT * FROM users WHERE username = '$username' AND password = '$pass'");
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-$active = $row['active'];
-$count = mysqli_num_rows($result);
+$result = mysqli_query($conn,"SELECT count(*) as cntUser FROM users WHERE username = '$username' AND password = '$pass'");
+$row = mysqli_fetch_array($result);
+//$active = $row['active'];
+$count = $row['cntUser'];
 
 if($count == 1){
 	$_SESSION['login_user'] = $username;

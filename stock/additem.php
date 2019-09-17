@@ -5,7 +5,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/w3.css">
-<link rel="stylesheet" type="text/css" href="../css/addStock.css">
+<link rel="stylesheet" type="text/css" href=".stock.css">
 <style type="text/css">
 	input{
 		margin: 5px 0px 5px 0px;
@@ -16,7 +16,7 @@
 
 	<div class="container">
 		<div class="well">
-			<form method="POST" action="../config/stock.php">
+			<form method="POST" action="stock.php">
 				<div >
 					<label for="itemid" class="col-sm-2"> Item Id</label>
 					<input required  placeholder="Item Id" type="text" name="itemid">
