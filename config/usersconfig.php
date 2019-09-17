@@ -11,14 +11,23 @@ $companyemail= mysqli_real_escape_string($conn, $_POST['companyEmail']);
 $companyphoneno= mysqli_real_escape_string($conn, $_POST['companyPhone']);
 $companylogo = addslashes(file_get_contents($_FILES['companyLogo']['tmp_name']));
 $password= $_POST['password'];
+//check if user exists
+$Cuserexist = mysqli_query($conn, "SELECT * FROM users WHERE username=$username");
 
+if(!Cuserexist){
+	$results= mysqli_query($conn, "INSERT INTO users(username, firstname, surname, emailadd, phoneno, companyname, companyzipcode, companyemail, companyphoneno, comapanylogo, 	password) VALUES('$username', '$firstname', '$surname', '$emailadd', '$phoneno', '$companyname', '$companyzipcode', '$companyemail', '$companyphoneno', '$companylogo', '$password')");
+	if(!$results){
+		echo "try again";
+	}
+	else{
 
-$results= mysqli_query($conn, "INSERT INTO users(username, firstname, surname, emailadd, phoneno, companyname, companyzipcode, companyemail, companyphoneno, comapanylogo, 	password) VALUES('$username', '$firstname', '$surname', '$emailadd', '$phoneno', '$companyname', '$companyzipcode', '$companyemail', '$companyphoneno', '$companylogo', '$password')");
-if(!$results){
-	echo "try again";
-}
-else{
-
-	header("location: ../index.php");
+		header("location: ../index.php");
+	}
+}else{
+	?>
+	<script>
+		windows.alert("Username exists");
+	</script>
+	<?
 }
 ?>
