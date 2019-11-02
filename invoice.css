@@ -1,0 +1,29 @@
+#companyadd{
+	padding: 20px 10px 0px 0px;
+	float: right;
+	color:red;
+	font-size: 10px;
+}
+/*.det01{
+	border: 1px solid;
+}*/
+#ref{
+	font: sans-serif;
+}
+.tt1{
+	display: block;
+	float: none;
+}
+.sd{
+	padding: 10px;
+}
+table, tr,td{
+	border:1px solid;
+}
+
+td > input{
+	border:  none;
+}
+#conts{
+	padding-bottom: 10px;
+}
