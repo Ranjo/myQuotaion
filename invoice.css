@@ -11,13 +11,15 @@
 	font: sans-serif;
 }
 .tt1{
-	display: block;
-	float: none;
+	//display: block;
+	clear: both;
 }
 .sd{
-	padding: 10px;
+	padding: 10px 0px 10px 0px;
+	clear: both;
 }
 table, tr,td{
+	clear: both;
 	border:1px solid;
 }
 

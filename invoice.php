@@ -36,11 +36,14 @@ $total = $quantity*$amount*/
 				To:<br> <div class="col-xs-4 w3-border w3-teal"> Maisha Bora Sacco <br> P.o Box 120-00100 <br> Nairobi, Kenya</div>
 
 			</div>
-				<div class="w3-light-green col-xs-6 tt1"> Attention: ttomno.tom@gmail.com</div>
+			<div class="w3-light-green col-xs-6 tt1"> Attention: ttomno.tom@gmail.com</div>
+
 			<div class="rows sd">
 				
 				<div class="col-xs-3">
 					<label>Quotation number:</label> 1
+				</div><div class="col-xs-6">
+					
 				</div>
 				<div class="col-xs-3">
 					Date:<?php echo date("d/m/Y"); ?>
@@ -61,10 +64,10 @@ $total = $quantity*$amount*/
 				</thead>
 				<tbody>
 					<tr>
-						<td><input type="textarea" name="descrip" value="Hp 15 laptop 15" 400gb hdd 4gb ram i5 G2"></td>
-						<td><input type="text" name="qty" value="1"></td>
-						<td><input type="text" name="amt" value="30000"></td>
-						<td><?php //echo $total; ?>30000</td>
+						<td><input type="textarea" name="descrip" value="Petrol Oil pure refined"></td>
+						<td><input type="text" name="qty" value="1000litres"></td>
+						<td><input type="text" name="amt" value="120"></td>
+						<td><?php //echo $total; ?>120000</td>
 
 					</tr>
 
@@ -72,10 +75,10 @@ $total = $quantity*$amount*/
 				<tfoot >
 
 					<tr>
-						<td><b>Total</b></td>
-						<td></td>
-						<td></td>
-						<td><b>30000</b></td>
+						<td colspan="3"><b>Total</b></td>
+						<!-- <td></td>
+						<td></td> -->
+						<td><b>120000</b></td>
 					</tr>
 
 				</tfoot>
