@@ -13,6 +13,15 @@
 /*$quantity =$_POST['qty'];
 $amount =$_POST['amt'];
 $total = $quantity*$amount*/
+include 'config/dbconfig.php';
+$result= mysqli_query($conn, "SELECT * FROM stock WHERE id='1'");
+$result1= mysqli_fetch_array($result);
+$quan= $result1['iquantity'];
+$costs= $result1['cost'];
+$tx = $result1['tax']/100;
+
+$total= $quan*$costs;
+$sumTot= $total+($total*$tx);
 ?>
 <body>
 	<div class="container">
@@ -63,22 +72,26 @@ $total = $quantity*$amount*/
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td><input type="textarea" name="descrip" value="Petrol Oil pure refined"></td>
-						<td><input type="text" name="qty" value="1000litres"></td>
-						<td><input type="text" name="amt" value="120"></td>
-						<td><?php //echo $total; ?>120000</td>
+					<tr id="desh">
+						<td><!-- <input type="textarea" name="descrip" value=" --><?php echo $result1['itemname']; echo "<br>"; echo $result1['idescription'] ?><!-- "> --></td>
+						<td><input type="text" name="qty" value="<?php echo $result1['iquantity'] ?>"></td>
+						<td><!-- <input type="text" name="amt" value="120"> --><?php echo $result1['cost'] ?></td>
+						<td><?php //echo $total; ?><?php echo $total; ?></td>
 
 					</tr>
 
 				</tbody>
 				<tfoot >
 
+<tr>
+	<td colspan="3"><b>Tax</b></td>
+	<td><b><?php echo $result1['tax'];echo "%"; ?></b></td>
+</tr>
 					<tr>
+
+						
 						<td colspan="3"><b>Total</b></td>
-						<!-- <td></td>
-						<td></td> -->
-						<td><b>120000</b></td>
+						<td><b><?php echo $sumTot; ?></b></td>
 					</tr>
 
 				</tfoot>

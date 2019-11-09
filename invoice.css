@@ -18,6 +18,9 @@
 	padding: 10px 0px 10px 0px;
 	clear: both;
 }
+table{
+border-radius: 5px;
+}
 table, tr,td{
 	clear: both;
 	border:1px solid;
@@ -26,6 +29,10 @@ table, tr,td{
 td > input{
 	border:  none;
 }
+#desh{
+	height: 100px;
+}
+
 #conts{
 	padding-bottom: 10px;
 }
